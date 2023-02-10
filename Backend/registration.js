@@ -1,16 +1,23 @@
-const express = require('express');
-const app = express();
-const mongoose = require('mongoose');
+const users = [];
 
-mongoose.connect('mongodb://localhost/mydatabase', {useNewUrlParser: true});
+function signUp(email, password) {
+    const user = {
+      email: email,
+      password: password
+    };
+    users.push(user);
+    console.log("User signed up successfully");
+  }
 
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-  console.log('Connected to MongoDB');
-});
+  function signIn(email, password) {
+    for (const user of users) {
+      if (user.email === email && user.password === password) {
+        console.log("User signed in successfully");
+        return;
+      }
+    }
+    console.log("Sign in failed: Invalid email or password");
+  }
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
-
+signUp("john.doe@example.com", "password123");
+signIn("john.doe@example.com", "password23");
