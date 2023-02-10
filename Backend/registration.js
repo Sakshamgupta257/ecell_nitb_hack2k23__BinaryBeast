@@ -48,5 +48,5 @@ let users = [
   // Example usage
   console.log(signUp("user3@example.com", "pass789"));
   console.log(signIn("user3@example.com", "pass789"));
-  console.log(signIn("Mohit", "mohit2002"));
+  console.log(signIn("Mohit", "mohit2003"));
   
