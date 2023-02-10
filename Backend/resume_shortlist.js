@@ -12,7 +12,7 @@ app.post('/resume-shortlisting', async (req, res) => {
 
     const resumeText = resume.toLowerCase().trim();
     const jobDescriptionText = jobDescription.toLowerCase().trim();
-    const model = await tf.loadLayersModel('C:\Users\saksh\OneDrive\Documents\GitHub\ecell_nitb_hack2k23__BinaryBeast\Backend\model.js');
+    const model = await tf.loadLayersModel('Backend\model.js');
 
     const inputData = [resumeText + jobDescriptionText];
     const inputTensor = tf.tensor2d(inputData, [inputData.length, inputData[0].length]);
