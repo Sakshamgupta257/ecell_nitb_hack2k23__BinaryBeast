@@ -37,7 +37,7 @@ letter-spacing: -0.5;
 }
 
 #nav li a:hover{
-
+    padding-bottom: 5px;
     border-bottom: 3px solid rgb(0, 255, 4);
 }
 #nav a{
