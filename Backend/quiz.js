@@ -1,3 +1,4 @@
+
 const quizData = [
   {
     question: "5 In 3 years by compound interest, a sum becomes Rs. 900. But in 4 years by compound interest, the same sum becomes Rs. 1000. What is the sum and the rate of interest?",
@@ -51,6 +52,10 @@ const form = document.getElementById("quiz-form");
 const submitBtn = document.getElementById("submit-btn");
 const resultDiv = document.getElementById("result");
 
+const showMessage = document.getElementById('showMessage');
+const closePopup = document.getElementById('closePopup');
+const popup = document.getElementById('popup');
+
 
 quizData.forEach((quizQuestion, index) => {
   form.innerHTML += `
@@ -72,7 +77,10 @@ quizData.forEach((quizQuestion, index) => {
   `;
 });
 
+
 submitBtn.addEventListener("click", e => {
+  
+console.log("Clicked");
   e.preventDefault();
   let score = 0;
   quizData.forEach((quizQuestion, index) => {
@@ -81,8 +89,14 @@ submitBtn.addEventListener("click", e => {
       score++;
     }
   });
+
+
+
+
   resultDiv.innerHTML = `
     <h2>Result</h2>
-    <p>You scored ${score}/${quizData.length}</p>
+    <p> You scored ${score}/${quizData.length}</p>
   `;
+
+  
 });
