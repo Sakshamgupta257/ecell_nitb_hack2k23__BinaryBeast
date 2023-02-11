@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Montserrat&display=swap');
+
+/*font-family: 'Jost', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+
+.home{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.home .box{
+    text-align: center;
+    background-color: rgb(212, 255, 234);
+    height: 90%;
+    margin: 20px 80px;
+    margin-top: 120px;
+    border: 0px solid ;
+    border-radius: 10px;
+
+}
+
+.leftcontent{
+    float: left;
+    align-items: left;
+    text-align: left;
+    font-family:'Jost', sans-serif;
+    font-size: 45px;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.subhead h1{
+    color: white;
+    border-radius: 25px;
+    padding: 8px 25px;
+    font-size: 15px;
+    background-color: rgb(1, 1, 95);
+    font-weight: 500;
+    width: 250px;
+}
+
+.subhead h2{
+    
+    color: rgb(1, 1, 95);
+    border-radius: 20px;
+    padding: 6px 25px;
+    font-size: 20px;
+    background-color: white;
+}
+
+.leftcontent p{
+    margin: 30px 0;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 70px;
+}
+
+
+
+.leftcontent h2{
+    
+    color: rgb(1, 1, 95);
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    margin-bottom: 50px;
+}
+
+.leftcontent .smallheading, .mainheading{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.smallheading{
+    gap: 65px;
+    margin-top: 0;
+    color: rgb(120, 120, 120)!important;
+}
+
+.mainheading{
+    gap: 25px;
+    margin-top: -50;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.rightcontent{
+    float: right;
+    margin-top: 100px;
+    margin-right: 80px;
+}
+
+.frame{
+    width: 600px;
+    height: 850px;
+
+}
+
+.frame img{
+    border-radius: 15px;
+    transition: 0.3s ease-in;
+}
+
+.pictures img{
+    height:67px;
+    width: 75px;
+    border-radius: 13px;
+    margin-top: -100px;
+
+}
+
+.pictures .one{
+    margin-top: -100px;
+}
