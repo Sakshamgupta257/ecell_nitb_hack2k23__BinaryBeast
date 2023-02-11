@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Placement Resources</title>
+  </head>
+  <style>
+    body {
+        font-family:'Jost', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1600);
+ 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.208);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 50px;
+  
+  border: solid 2px  rgba(1, 1, 95, 0.208);
+  border-radius: 10px;
+  margin: auto;
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+ 
+
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+    color: #fff;
+  font-size: 20px;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background-color: rgba(110, 110, 130, 0.54);
+  border: 2px solid rgba(1, 1, 95, 0.208);
+  border-radius: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+.resource-section {
+  margin-bottom: 40px;
+}
+.resource-section h2 {
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: bold;
+    color: antiquewhite;
+    text-decoration: underline;
+}
+.resource-section h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+resource-section p {
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.485);
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+  height: 200px;
+  backdrop-filter: blur 10px;
+  color: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card a {
+  background-color: rgba(4, 164, 250, 0.487);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  height: 20px;
+  font-size: 18px;
+  width: 200px;
+}
+
+.card a:hover {
+  background-color:rgba(0, 0, 0, 0.208);
+}
+.des{
+    font-size: 20px;
+
+}
+
+
+  </style>
+  <body>
+    <header>
+      <h1>Placement Resources</h1>
+      <nav>
+        <ul>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#youtube">YouTube Channels</a></li>
+          <li><a href="#questions">Question Sheets</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="courses" class="resource-section">
+        <h2>Courses</h2>
+        <div class="card">
+          <h3>Introduction to Algorithms</h3>
+          <div class="des">
+          A course that covers the basics of algorithms and data structures. In a DSA course, students learn about the different types of algorithms, such as sorting algorithms, searching algorithms, and graph algorithms, and the techniques used to evaluate their performance, such as time and space complexity analysis. The course also covers data structures, such as arrays, linked lists, trees, and graphs, which are used to organize and manipulate data efficiently.</div>
+          <a href="#">View Course</a>
+        </div>
+        <!-- Add more cards for other courses -->
+      </section>
+      <section id="notes" class="resource-section">
+        <h2>Notes</h2>
+        <div class="card">
+          <h3>Data Structures and Algorithms</h3>
+          <div class="des">
+        A set of notes that provide an overview of data structures and algorithms.</div>
+          <a href="#">View Notes</a>
+        </div>
+        <!-- Add more cards for other notes -->
+      </section>
+      <section id="youtube" class="resource-section">
+        <h2>YouTube Channels</h2>
+        <div class="card">
+          <h3>Algorithm and Data Structures</h3>
+          <div class="des">
+        A YouTube channel that provides video tutorials on algorithms and data structures.</div>
+          <a href="#">View Channel</a>
+        </div>
+        <!-- Add more cards for other YouTube channels -->
+      </section>
+      <section id="questions" class="resource-section">
+        <h2>Question Sheets</h2>
+        <div class="card">
+          <h3>Algorithm and Data Structures Practice Questions</h3>
+          <div class="des">
+        A set of practice questions to help you test your understanding of algorithms and data structures.</div>
+          <a href="#">View Questions</a>
+        </div>
+        <!-- Add more cards for other question sheets -->
+      </section>
+    </main>
+  </body>
+</html>
+
+
+</html>
