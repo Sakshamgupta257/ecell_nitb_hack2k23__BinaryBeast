@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.0/build/pdf.min.js"></script>
+    <script>
+      // Load the PDF file
+      PDFJS.getDocument('M:\Mohit\DEmoRepo\ecell_nitb_hack2k23__BinaryBeast\Mohit Resume Dec.pdf').then(function(pdf) {
+        // Get the first page of the PDF
+        pdf.getPage(1).then(function(page) {
+          // Set the scale of the viewport to fit the canvas element
+          var scale = 1.5;
+          var viewport = page.getViewport({ scale: scale });
+  
+          // Get the canvas element
+          var canvas = document.getElementById('pdf-canvas');
+  
+          // Set the canvas size to match the viewport size
+          canvas.width = viewport.width;
+          canvas.height = viewport.height;
+  
+          // Render the page in the canvas
+          var context = canvas.getContext('2d');
+          page.render({ canvasContext: context, viewport: viewport });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <canvas id="pdf-canvas"></canvas>
+  </body>
+</html>
