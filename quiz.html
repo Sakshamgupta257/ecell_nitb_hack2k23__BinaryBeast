@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Coding Quiz</title>
+  <style>
+    /* Add styles for the quiz page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background-color: #2196f3;
+      color: white;
+    }
+    .quiz-container {
+      width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #ddd;
+    }
+    .question {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .question h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .answer {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+    }
+    .answer input[type="radio"] {
+      margin-right: 20px;
+    }
+    .answer label {
+      font-size: 16px;
+        text-align: left;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 20px;
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Coding Quiz</h1>
+  <div class="quiz-container">
+    <!-- First question -->
+    <div class="question">
+      <h2>What is the difference between var, let, and const in JavaScript?</h2>
+      <div class="answer">
+        <input type="radio" name="question1" value="var is function scoped, let and const are block scoped">
+        <label>var is function scoped, let and const are block scoped</label><br>
+        <input type="radio" name="question1" value="var is block scoped, let and const are function scoped">
+        <label>var is block scoped, let and const are function scoped</label><br>
+        <input type="radio" name="question1" value="var and let are function scoped, const is block scoped">
+        <label>var and let are function scoped, const is block scoped</label><br>
+        <input type="radio" name="question1" value="var and const are function scoped, let is block scoped">
+        <label>var and const are function scoped, let is block scoped</label>
+      </div>
+    </div>
+  
