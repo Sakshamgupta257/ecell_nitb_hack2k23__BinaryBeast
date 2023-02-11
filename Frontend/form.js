@@ -5,4 +5,5 @@
     const email = document.getElementById("email").value;
     const userData = { name, email };
     console.log(JSON.stringify(userData));
+    
   });
