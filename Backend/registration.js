@@ -44,6 +44,7 @@ let users = [
       }
     }
   }
+
   
   // Example usage
   console.log(signUp("user3@example.com", "pass789"));
