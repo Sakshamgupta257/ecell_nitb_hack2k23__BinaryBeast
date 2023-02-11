@@ -20,6 +20,7 @@ h1{
     margin-left: 25%;
     text-align: center;
     justify-content: center;
+
     
   }
   
@@ -56,7 +57,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 24px;
     margin-bottom: 20px;
     color: rgb(57, 57, 57);
-    font-family: 'jost';
+    font-family: 'jost' !important;
   }
   
   #quiz-form .options {
@@ -84,7 +85,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     color: white;
     border: none;
     border-radius: 50px;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in-out;
@@ -96,6 +97,29 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   }
   
   #submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #back-btn {
+    margin-top: 40px;
+    padding: 20px 40px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #back-btn:active {
     transform: translateY(0);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   }
