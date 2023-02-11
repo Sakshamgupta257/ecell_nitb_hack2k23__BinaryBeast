@@ -51,6 +51,7 @@ const form = document.getElementById("quiz-form");
 const submitBtn = document.getElementById("submit-btn");
 const resultDiv = document.getElementById("result");
 
+
 quizData.forEach((quizQuestion, index) => {
   form.innerHTML += `
     <div class="question">
