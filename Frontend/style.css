@@ -89,7 +89,10 @@ font-family: 'Montserrat', sans-serif;*/
     font-weight: 600;
     font-size: 40px;
 }
+.mainheading h1{
+    margin: 33px;
 
+}
 .rightcontent{
     float: right;
     margin-top: 100px;
