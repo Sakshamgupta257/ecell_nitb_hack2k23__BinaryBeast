@@ -25,7 +25,7 @@ const employeerData =
 },
 {
   "Name" : "Wipro",
-  "Skills" : "Cyber Security Analyst",
+  "Skills" : ["Cyber Security Analyst","colud","av"],
   "vacancies" : 5,
   "Sector" : "Cyber Computing",
   "Date" : "2022-02-05",
@@ -54,13 +54,68 @@ const employeerData =
 
 
 //verifying employeerData
-console.log("The Current employeer is ",employeerData[0].Name);
+console.log("The Current employeer is ",employeerData[3].Skills[0]);
 
 console.log("The Current employeer is ",employeerData[0].Skills);
 
 const studData = [
   {
-    "Name" : "Mohit",
+    "Name" : "Mohit Namdev",
+    "Couse" : "B.Tech CSE",
+    "CGPA" : 9.00,
+    "Skills":['ReactJS','Frontend Development','Video Editing'],
+    "Placed": true,
+    "Resume" :"" 
 
   },
+  {
+    "Name" : "Aayan Ali",
+    "Couse" : "B.Tech IT",
+    "CGPA" : 8,
+    "Skills":['Cyber Security','Graphic Desining'],
+    "Placed": true,
+    "Resume" :"" 
+
+  },
+  
+  {
+    "Name" : "Hitika Ghanani",
+    "Couse" : "B.Tech CSE",
+    "CGPA" : 9.1,
+    "Skills":['Express Developer','Django Developer'],
+    "Placed": true,
+    "Resume" :"" 
+
+  },
+  {
+    "Name" : "Krishna Gupta",
+    "Couse" : "B.Tech CSE",
+    "CGPA" : 8.00,
+    "Skills":['Video Editing','UI Designing'],
+    "Placed": false,
+    "Resume" :"" 
+
+  },
+
+  {
+    "Name" : "Nishta Gupta",
+    "Couse" : "B.Tech CSE",
+    "CGPA" : 9.1,
+    "Skills":['pHp Developer'],
+    "Placed": true,
+    "Resume" :"" 
+
+  },
+
+  {
+    "Name" : "Saksham Gupta",
+    "Couse" : "B.Tech CSE",
+    "CGPA" : 8.69,
+    "Skills":['Backend Engineer','Competitive Programming'],
+    "Placed": false,
+    "Resume" :""
+
+  },
+  
+
 ]
