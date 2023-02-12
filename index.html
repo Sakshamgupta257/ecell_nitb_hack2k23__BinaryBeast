@@ -5,8 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Upwardly</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="Frontend/media/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Frontend/media/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Frontend/media/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="Frontend/media/favicon_io/site.webmanifest">
   <link rel="stylesheet" href="\Frontend\style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
   <script src="Backend\quiz.js"></script>
   <script src="Frotend/pdf.js"></script>
@@ -47,6 +52,12 @@
           clearInterval(countsss);
       }
   }
+
+  async function load(){
+    let res = await fetch("/fetch/employer",{mode:"no-cors"});
+    let data = await res.json();
+    console.log(data);
+  }
 </script>
 </head>
 
@@ -55,10 +66,10 @@
   <div id="header">
 
     <nav
-      class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+      class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 opacity-25">
       <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="https://flowbite.com/" class="flex items-center">
-          <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
+        <a href="#" class="flex items-center">
+          <img src="Frontend\media\favicon_io\apple-touch-icon.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
           <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Upwardly</span>
         </a>
         <div class="flex gap-6 mr-6 md:order-2 ">

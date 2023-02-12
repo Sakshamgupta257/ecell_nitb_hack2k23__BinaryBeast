@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/Sakshamgupta257/ecell_nitb_hack2k23__BinaryBeast/issues"
   },
-  "homepage": "https://github.com/Sakshamgupta257/ecell_nitb_hack2k23__BinaryBeast#readme"
+  "homepage": "https://github.com/Sakshamgupta257/ecell_nitb_hack2k23__BinaryBeast#readme",
+  "proxy":"http://127.0.0.01:8001"
 }
