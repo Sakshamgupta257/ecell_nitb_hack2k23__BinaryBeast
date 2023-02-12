@@ -10,7 +10,7 @@ from sklearn.neighbors import NearestNeighbors
 
 stopw  = set(stopwords.words('english'))
 
-df =pd.read_csv('job_final.csv') 
+df =pd.read_csv('job.csv') 
 df['test']=df['Job_Description'].apply(lambda x: ' '.join([word for word in str(x).split() if len(word)>2 and word not in (stopw)]))
 
 app=Flask(__name__)
@@ -19,7 +19,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template("main2.html")
+    return render_template("main.html")
 
 
 
@@ -84,7 +84,7 @@ def submit_data():
         
         
     #return  'nothing' 
-    return render_template('new_model.html',tables=[df2.to_html(classes='job')],titles=['na','Job'])
+    return render_template('main.html',tables=[df2.to_html(classes='job')],titles=['na','Job'])
         
         
         
