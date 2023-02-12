@@ -53,6 +53,14 @@ const employeerData =
     ];
 
 
+//verifying employeerData
 console.log("The Current employeer is ",employeerData[0].Name);
 
 console.log("The Current employeer is ",employeerData[0].Skills);
+
+const studData = [
+  {
+    "Name" : "Mohit",
+
+  },
+]
