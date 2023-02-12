@@ -12,6 +12,42 @@
   <script src="Frotend/pdf.js"></script>
   <script src="Backend/data.js"></script>
 <script src="Frontend/faq.js"></script>
+<script>
+  let counts=setInterval(updated);
+  let upto=600;
+  function updated(){
+      var count= document.getElementById("counter");
+      count.innerHTML=++upto;
+      if(upto===1000)
+      {
+          clearInterval(counts);
+      }
+  }
+</script>
+<script>
+  let countss=setInterval(updated);
+  let uptoo=0;
+  function updated(){
+      var count= document.getElementById("counter1");
+      count.innerHTML=++uptoo;
+      if(uptoo===400)
+      {
+          clearInterval(countss);
+      }
+  }
+</script>
+<script>
+  let countsss=setInterval(updated);
+  let uptooo=400;
+  function updated(){
+      var count= document.getElementById("counter2");
+      count.innerHTML=++uptooo;
+      if(uptooo===800)
+      {
+          clearInterval(countsss);
+      }
+  }
+</script>
 </head>
 
 <body>
@@ -56,7 +92,7 @@
             </li>
             
             <li>
-              <a href="#"
+              <a href="Frontend\about.html"
                 class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
             </li>
             <li>
@@ -83,16 +119,19 @@
             Find the Best job <br> offer</p>
           <h2>Lorem ipsum dolor sit, amet consectetur voluptate suscipit <br>provident aliquam </h2>
           <div class="smallheading">
-            <h2>JOBS</h2>
-            <h2>JOBS</h2>
-            <h2>JOBS</h2>
+            <h2>PLACEMENTS</h2>
+            <h2>INTERNSHIPS</h2>
+            <h2>COMPANIES</h2>
           </div>
           <div class="mainheading">
-            <h1>+300k</h1>
+            <h1><div id="counter">
+          </div></h1>
             <h1
               style="border-right: 1px solid #3e3e3e; border-left: 1px solid #3e3e3e; padding-left:10px; padding-right:10px;">
-              +300k</h1>
-            <h1>+300k</h1>
+              <div id="counter1">
+              </div></h1>
+            <h1><div id="counter2">
+            </div></h1>
           </div>
         </div>
 
@@ -199,6 +238,72 @@
         </div>
       </div>
     </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.46hObQ3woFCUFIdH49L_PgHaE8&pid=Api&P=0">
+      </div>
+      <div class="content">
+        <div>
+          <h2>IBM</h2>
+          <h2>450+ Placements</h2>
+          <p>IBM has a large and diverse portfolio of products and services like cloud computing, AI, commerce, data and analytics,IoT IT, mobile, digital workplace and cybersecurity.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="https://www.frontier-enterprise.com/wp-content/uploads/2020/07/Wipro.jpg">
+      </div>
+      <div class="content">
+        <div>
+          <h2>Wipro</h2>
+          <h2>350+ Placements</h2>
+          <p>Wipro's capabilities range across cloud computing, cyber security, digital transformation, artificial intelligence, robotics, data analytics.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="https://cdn2.benzinga.com/files/imagecache/1024x768xUP/images/story/2012/oraclemarkham4_0.jpg">
+      </div>
+      <div class="content">
+        <div>
+          <h2>Oracle</h2>
+          <h2>200+ Placements</h2>
+          <p>Oracle Cloud spans 41 interconnected geographic regions, offering a complete suite of Oracle Cloud Applications and more than 100 Oracle Cloud Infrastructure services
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="https://cdn.vox-cdn.com/thumbor/AT1ouF_-x2Qx97_hrhlCRX9DNhM=/0x51:1000x614/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/49531965/cisco_systems_hq2.0.jpg">
+      </div>
+      <div class="content">
+        <div>
+          <h2>Cisco</h2>
+          <h2>180+ Placements</h2>
+          <p>Cisco develops, manufactures, and sells networking hardware, software, telecommunications equipment and other high-technology services and products.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.uu3DsnSCDRCbmzDe8_XJYgHaEc&pid=Api&P=0">
+      </div>
+      <div class="content">
+        <div>
+          <h2>Reliance</h2>
+          <h2>150+ Placements</h2>
+          <p>Reliance Industries Limited is an Indian multinational conglomerate company, headquartered in Mumbai. It has diverse businesses including telecommunications
+          </p>
+        </div>
+      </div>
+    </div>
+  
   </div>
 
   <div class="faq-header">Frequently Asked Questions</div>
