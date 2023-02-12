@@ -1,5 +1,8 @@
-const employeerData = 
-    [{
+const employeerData = {
+  
+
+
+    "Result":[{
         "Name" : "Infosys",
         "Skills" : "Mern Stack Developer",
         "vacancies" : 5,
@@ -48,15 +51,11 @@ const employeerData =
   "Sector" : "Cyber Application Operation",
   "Date" : "2022-02-04",
   "desc" : "IBM hiring Technical Infrastructure Specialist "
-},
-
-    ];
+}]
+}
 
 
 //verifying employeerData
-console.log("The Current employeer is ",employeerData[3].Skills[0]);
-
-console.log("The Current employeer is ",employeerData[0].Skills);
 
 const studData = [
   {
@@ -119,3 +118,35 @@ const studData = [
   
 
 ]
+
+
+let namee = document.getElementById("name");
+let obj = JSON.parse(JSON.stringify(employeerData));
+
+class myData{
+    constructor(pose){
+        this.pose = pose
+    }
+  
+    update(a){
+        this.pose+=a;
+        namee.innerHTML = obj.Result[this.pose].Name;
+    }
+    next(){
+        this.update(-1);
+    }
+    prev(){
+        this.update(1);
+    }
+    reset(){
+        this.pose = this.current
+        this.timer()
+    }
+}
+
+let gar = new myData(48);
+gar.update(-1);
+
+console.log(obj[0]);
+
+

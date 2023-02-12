@@ -2,52 +2,39 @@
 let users = [
     {
       email: "user1@example.com",
-      password: "pass123"
+      pass: "pass123"
     },
     {
       email: "user2@example.com",
-      password: "pass456"
+      pass: "pass456"
     },
     {
         email:"Mohit",
-        password:"mohit2003"
+        pass:"mohit2003"
     }
   ];
-  
-  function signUp(email, password) {
-    // existing user
-    let existingUser = users.find(user => user.email === email);
-    if (existingUser) {
-      return "Email is already in use";
-    } else {
-      // Add the new user to the users array
-      let newUser = {
-        email: email,
-        password: password
-      };
-      users.push(newUser);
-      return "Sign up successful";
-    }
-  }
-  
+
+  const email = document.getElementById("emailInput");
+  const pass = document.getElementById("passInput");
+  const submit = document.getElementById("Login-Btn");
+
+
   // Function to sign in
-  function signIn(email, password) {
+  function signIn(email, pass) {
     let existingUser = users.find(user => user.email === email);
     if (!existingUser) {
       return "Email not found";
     } else {
         
-      if (existingUser.password === password) {
+      if (existingUser.pass === pass) {
         return "Sign in successful";
       } else {
-        alert("Incorrect password");
+        alert("Incorrect pass");
       }
     }
   }
 
+
+
   
-  // Example usage
-  console.log(signUp("user3@example.com", "pass789"));
-  console.log(signIn("user3@example.com", "pass789"));
-  console.log(signIn("Mohit", "mohit2003"));
   
