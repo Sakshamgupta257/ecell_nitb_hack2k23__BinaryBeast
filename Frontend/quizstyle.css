@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Montserrat&display=swap');
 
 body{
-    background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-color: #60a4de;
+  background-image: linear-gradient(19deg, #60a4de 0%, #338ad6 100%);
 align-items: center;
 text-align: center;
 margin-top: 50px;
